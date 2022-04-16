@@ -90,6 +90,42 @@ d.ganache
 
 e.Metamask build
 
+
+
+##2.Create the initial function:
+
+Goal:
+
+When you run the truffle console, you could see the task content, id, function
+
+
+
+Process:
+
+1.mapping
+
+2.constructor
+
+3. 3.truffle migrate ang trfuffle reset (no need truffle compile)
+
+```javascript
+truffle migrage --reset
+```
+
+
+
+4.truffle console
+
+
+
+
+
+
+
+
+
+
+
 **Reference**
 
 [Build Your First Blockchain App Using Ethereum Smart Contracts and Solidity](https://www.youtube.com/watch?v=coQ5dg8wM2o)
