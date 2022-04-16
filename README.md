@@ -118,13 +118,93 @@ truffle migrage --reset
 
 
 
+## 3 Front End file build
+
+Goal: set up the front end site to load the user name, also other
+
+
+
+Process:
+
+1.buid the src folder, index.html file, app.js file
+
+2.comment the form file
+
+3.build the bs.config .js, paste the content from the github repo
+
+```javascript
+npm run dev//start the front end project, server is from lite server
+```
 
 
 
 
 
+4.install the meta mask extension(login the test account)
+
+5.input the private key from the ganache 
+
+6.App.js write the function:
+
+0.function load area
+
+a.function area
+
+b.web3 project
+
+**[Uncaught TypeError: Web3 is not a constructor](https://ethereum.stackexchange.com/questions/122660/uncaught-typeerror-web3-is-not-a-constructor)**
+
+```javascript
+npm i web3@0.20.7
+```
+
+# [TypeError: Web3 is not a constructor when trying to use node.js with truffle-contract](https://ethereum.stackexchange.com/questions/50294/typeerror-web3-is-not-a-constructor-when-trying-to-use-node-js-with-truffle-con)
+
+```javascript
+<script src="./js/truffle-contract.js"></script>
+<script src="./js/web3.min.js"></script>
+```
+
+d add the test Network to the Metamask:
+
+```javascript
+npm install ganache
+npm run ganache
+```
+
+**[ganache](https://github.com/trufflesuite/ganache)**
 
 
+
+[How to add Custom Network to Metamask](https://dev.to/afozbek/how-to-add-custom-network-to-metamask-l1n)
+
+
+
+[The endpoint returned a different chain ID: 0x539 (Ganache)](https://ethereum.stackexchange.com/questions/90385/the-endpoint-returned-a-different-chain-id-0x539-ganache)
+
+
+
+E:load the id:
+
+## contract content and loading:
+
+Goal: 
+
+1.before you load the contract, it does not show the loading text;
+
+2.during getting the contract content, show the loading text;
+
+3.get the contract content, stop the loading text;
+
+4.show the task information in the contract
+
+
+
+Process:
+
+1.fix the loading issue
+
+2.get the task in the contract
 
 **Reference**
 
