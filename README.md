@@ -206,11 +206,35 @@ truffle migrage --reset
 
 
 
+## create Task
+
+**Goal**
+
+enable the input area in the front end
+
+you could input the content, then enter, the page will reload, then render the result
+
+Also you can check the trasnsication and wallet in the Gannache,metamask will ask you to confirm the action
 
 
 
+Write the logic in the the sol file:
+
+1.event
+
+2.use it
+
+write the test in the test file
+
+write the front end code in the js file
+
+1.in the app.js
 
 
+
+**[html] A 'return' statement can only be used within a function body**
+
+[[html] A 'return' statement can only be used within a function body](https://github.com/microsoft/vscode/issues/143220)
 
 **Reference**
 

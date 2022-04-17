@@ -7,8 +7,9 @@ App = {
     console.log("app loading");
     await App.loadAccount();
     await App.loadContract();
+    // await App.createTask();
     await App.render();
-    // await App.setLoading();
+   
   },
 
   // a.function area
@@ -116,6 +117,16 @@ App = {
     }
 
    
+  },
+
+  createTask: async () => {
+  //  loading issue fix
+  App.setLoading(true)
+   // html open
+  const content = $('#newTask').val()
+  await App.todoList.createTask(content)
+  window.location.reload()
+ 
   },
   // set up the loading
   setLoading: (boolean) => {
