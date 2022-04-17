@@ -31,4 +31,15 @@ contract TodoList {
         // new ways of createTask
         emit TaskCreated(taskCount, _content, false);
     }
+
+    event TaskCompleted(uint256 id, bool completed);
+
+    // function
+    function toggleCompleted(uint256 _id) public {
+        Task memory _task = tasks[_id];
+        _task.completed = !_task.completed;
+        tasks[_id] = _task;
+        // new ways of createTask
+        emit TaskCompleted(_id, _task.completed);
+    }
 }
