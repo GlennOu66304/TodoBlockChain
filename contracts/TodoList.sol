@@ -4,7 +4,9 @@
 pragma solidity >=0.5.0;
 
 contract TodoList {
+
     uint256 public taskCount = 0; //const or let
+   
     // struct define the data type
     struct Task {
         uint256 id;
@@ -16,9 +18,9 @@ contract TodoList {
     mapping(uint256 => Task) public tasks; //const or let
 
     // constructor
-
+// use the function below
     constructor() public {
-        createTask("Check out dappuniversity.com "); // use the function below
+        createTask('Check out dappuniversity.com'); 
     }
 
     // function

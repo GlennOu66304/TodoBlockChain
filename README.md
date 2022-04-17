@@ -158,7 +158,7 @@ b.web3 project
 npm i web3@0.20.7
 ```
 
-# [TypeError: Web3 is not a constructor when trying to use node.js with truffle-contract](https://ethereum.stackexchange.com/questions/50294/typeerror-web3-is-not-a-constructor-when-trying-to-use-node-js-with-truffle-con)
+[TypeError: Web3 is not a constructor when trying to use node.js with truffle-contract](https://ethereum.stackexchange.com/questions/50294/typeerror-web3-is-not-a-constructor-when-trying-to-use-node-js-with-truffle-con)
 
 ```javascript
 <script src="./js/truffle-contract.js"></script>
@@ -188,23 +188,29 @@ E:load the id:
 
 ## contract content and loading:
 
-Goal: 
 
-1.before you load the contract, it does not show the loading text;
-
-2.during getting the contract content, show the loading text;
-
-3.get the contract content, stop the loading text;
 
 4.show the task information in the contract
 
 
 
-Process:
+## Always can not show the account id and the console has the network does not deployed?
 
-1.fix the loading issue
 
-2.get the task in the contract
+
+You need to regenerate the Network by running the code below:
+
+```bash
+truffle migrage --reset
+```
+
+
+
+
+
+
+
+
 
 **Reference**
 
