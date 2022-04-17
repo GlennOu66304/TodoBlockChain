@@ -1,4 +1,4 @@
-##1.SetUp The Project(Branch Name,Git Commit Name):
+## 1.SetUp The Project(Branch Name,Git Commit Name):
 
 Goals:
 
